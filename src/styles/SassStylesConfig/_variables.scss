@@ -1,0 +1,69 @@
+@use "sass:meta";
+
+/*
+   ***** IMPORTANT *******
+  This variables NEED to match every --CSS-variable,
+  Each new variable created in this file need to be created in _css-variables.scss too.
+  ***** IMPORTANT *******
+*/
+
+// breakpoints
+$xl: 1536px;
+$lg: 1200px;
+$md: 900px;
+$sm: 600px;
+$xs: 0;
+
+// Colors
+
+$primary: #4252af;
+$primary-medium: #152ebc;
+$primary-light: #2e7cf6;
+
+$secondary: #298f9b;
+
+$blue-munsell: #298f9b;
+$green-select: #227A78;
+$green-bg: #0A5E60;
+$teal: #218F9C;
+$dark-green: #265D60;
+
+$success: #4ad86c;
+$error: #df6366;
+
+$grey-body: #212529;
+$grey-label: #adb5bd;
+$grey-placeholder: #cbd1d7;
+$grey-line: #e9ecef;
+$grey-bg-option: #d6d8e7;
+$grey-input-bg: #f1f3f5;
+$grey-bg: #f8f9fa;
+$grey-off-white: #fcfcfc;
+$grey-title-active: #14142b;
+$grey-desc: #828282;
+$grey-border: #E5E5E5;
+$grey-border-dark: #B0B9C8;
+$greyed-out: #F6F7F8;
+$greyed-out-text: #D6D7DA;
+$dark-grey-text: #5A606C;
+$white-text: white;
+
+$ghost-white: #F7FAFC;
+
+$cta-1: #212529;
+$cta-2: #f3c647;
+
+$taupe: #9B856F;
+$content-black: #030e1b;
+$brands-hero-turquoise: #ACF7D8;
+
+
+
+/* font variables definition and fallback */
+$font-grotesque: "Grotesque", sans-serif;
+$font-hanson: "Hanson", sans-serif;
+$font-lato: "Lato", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+$font-prox: "Proxima Nova", sans-serif;
+$font-sofia: "Sofia Pro", sans-serif;
+

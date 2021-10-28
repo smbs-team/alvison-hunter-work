@@ -1,0 +1,144 @@
+@import 'SassStylesConfig/variables';
+
+.btn-holder {
+  position: relative;
+  z-index: 100;
+  height: 55px;
+  width: 337px;
+  max-width: 100%;
+  .button {
+    z-index: 500;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    background-color: $cta-1;
+    font-family: $font-prox;
+    color: $grey-off-white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    padding: 0 24px;
+    .long-text {
+      text-align: left;
+      font-size: 16px;
+      width: 60%;
+    }
+    .with-large-text {
+      font-size: 14px;
+      text-align: right;
+    }
+  }
+  .button:active {
+    box-shadow: 0 0 0 4px rgba(243, 198, 71, 0.33);
+  }
+  .sub-text {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    color: $grey-off-white;
+    font-family: $font-prox;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    line-height: 100%;
+    letter-spacing: 0.75px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &.disabled:not(.loading) .button {
+    background-color: $grey-bg-option;
+  }
+  &.loading {
+    display: flex;
+    justify-content: center;
+    .button {
+      height: 56px;
+      width: 159px;
+      left: 0px;
+      top: 0px;
+      border-radius: 40px;
+    }
+    .loading-icon {
+      .loading-inner {
+        svg {
+          height: 20px;
+          width: 20px;
+          animation-name: ckw;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+        }
+        @keyframes ckw {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+  &.sm {
+    height: 54px;
+    width: 54px;
+    .button {
+      max-height: 100%;
+      border-radius: 40px;
+      font-size: 45px;
+      font-weight: 400;
+    }
+    &:not(.loading) svg {
+      path {
+        fill: $grey-off-white;
+      }
+    }
+    &.disabled .button {
+      background-color: #adb5bd;
+    }
+  }
+  &.disabled .button:active {
+    box-shadow: none;
+  }
+}
+.small {
+  width: 200px;
+}
+
+.white-container {
+  z-index: 300;
+  .cart-btn {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 12px;
+  }
+  background-color: #ffffff;
+  width: 100%;
+  @media (min-width: 620px) {
+    &.in-cart {
+      width: 574px;
+    }
+  }
+  height: 94px;
+  position: fixed;
+  &:not(.empty) {
+    border-top: 1px solid #ededed;
+    bottom: 0px;
+  }
+  &.full-width {
+    left: 0;
+  }
+}

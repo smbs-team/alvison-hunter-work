@@ -1,0 +1,89 @@
+@import 'SassStylesConfig/variables';
+
+.footer {
+  width: 100%;
+  z-index: 1000;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  font-family: $font-grotesque;
+  font-weight: 200;
+  .branding-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .support {
+    font-size: 24px;
+  }
+  .logo {
+    font-size: 14px;
+    .logo-white {
+      path {
+        fill: white;
+      }
+    }
+    .reef-tech,
+    .reef-tech:visited {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .reef-links {
+      font-size: 16px;
+      line-height: 30px;
+      .link,
+      .link:visited {
+        text-decoration: none;
+        color: white;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+      .main {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    .social-links {
+      padding-top: 32px;
+      .social-link {
+        padding-right: 12px;
+      }
+    }
+  }
+}
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+}
+@media (min-width: 1000px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+.footer-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 277px;
+}
+.stack {
+  padding: 0px 24px 32px 24px;
+}

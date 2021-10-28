@@ -1,0 +1,348 @@
+@import '../../styles/SassStylesConfig/variables';
+
+
+
+.group-holder {
+  align-items: center;
+  .menu-group:last-child {
+    padding-bottom: 40px;
+  }
+}
+
+
+.menu-component {
+  width: 90vw;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  ::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    height: 0;
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
+  .category-selector {
+    width: 100%;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow: scroll;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 300;
+    padding-top: 18px;
+    .inner {
+      box-sizing: border-box;
+      display: flex;
+    }
+    .category-item {
+      font-family: "Grotesque", sans-serif;
+      font-size: 14px;
+      border: 1px solid #E9ECEF;
+      padding: 6px 12px 4px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      line-height: 24px;
+      user-select: none;
+      min-width: max-content;
+      margin-right: 8px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      &.selected {
+        color: white;
+        background-color: black;
+        font-weight: 600;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .item-image {
+    img {
+      min-height: 100%;
+    }
+  }
+  .menu-items {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    .menu-item {
+
+      .closed {
+        opacity: 0.6;
+      }
+      .item-name {
+        font-family: $font-grotesque;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.25px;
+      }
+      .item-description {
+        font-family: $font-grotesque;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0.25px;
+      }
+
+      .item-price {
+        font-family: $font-grotesque;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.75px;
+        color: black;
+      }
+      .lazyload-wrapper {
+        min-height: 39vw;
+      }
+      .item-image {
+        position: relative;
+        padding-right: 10px;
+        img {
+          top: 0;
+          object-fit: cover;
+          width: 39vw;
+          height: 39vw;
+          left: 0;
+          border-radius: 0;
+        }
+        .item-adder {
+          top: 8px;
+          left: 10px;
+          position: absolute;
+        }
+      }
+    }
+  }
+  .retail-broken-image {
+    height: 39vw;
+
+    @media (min-width: 620px) {
+      height: 128px;
+      min-height: 128px;
+    }
+  }
+
+
+
+  // Retail product
+  &.retail {
+    .menu-items {
+      .menu-item {
+        position: relative;
+        margin: 0;
+        width: 39vw;
+        padding-bottom: 16px;
+
+        .lazyload-wrapper {
+          min-height: 39vw;
+        }
+        .item-image {
+          width: 100%;
+          height: 39vw;
+          min-height: 39vw;
+          img {
+            top: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            border-radius: 0;
+          }
+        }
+
+
+        @media (min-width: 620px) {
+          width: 180px;
+          .item-image,
+          .lazyload-wrapper {
+            min-height: 180px;
+            height: 180px;
+          }
+        }
+
+      }
+      @media (min-width: 620px) {
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        .menu-item {
+          padding: 20px;
+        }
+      }
+
+
+      @media (min-width: 700px) {
+        grid-column: 5/13;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        overflow-x: auto;
+
+        &.group-name {
+          grid-column: 1/5;
+        }
+      }
+
+      @media (min-width: 1450px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+    }
+
+    @media (min-width: 700px) {
+      .group-name {
+        grid-column: 1/5;
+      }
+    }
+
+
+    .not-retail {
+      display: none;
+    }
+  }
+
+
+  // Not Retail product
+  &:not(.retail) {
+
+    .menu-items {
+
+      .menu-item {
+        border: 1px solid $grey-line;
+        margin: 10px 0;
+        width: 100%;
+      }
+    }
+
+    .item-content {
+      display: flex;
+      padding: 12px;
+    }
+
+    .item-text {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 620px) {
+      .item-content {
+        padding: 24px;
+      }
+
+      .menu-item {
+        margin: 20px 0;
+      }
+
+    }
+
+    @media (max-width: 620px) {
+      .no-image-height {
+        height: 39vw;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 620px) {
+  .menu-component {
+    width: 92vw;
+  }
+  .item-text {
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .menu-component {
+
+    //not retail
+    &:not(.retail) {
+      .menu-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .menu-item {
+          display: flex;
+          margin-top: 10px;
+          width: 45vw;
+          border: 1px solid $grey-line;
+
+          .item-text {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+          }
+          .item-name {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.75px;
+          }
+          .item-description {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+          }
+          .item-price {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            color: black;
+
+            @media (min-width: 620px) {
+              flex-grow: 1;
+              display: flex;
+              align-items: flex-end;
+            }
+
+          }
+
+
+          .lazyload-wrapper {
+            min-height: 183px;
+          }
+          .item-image {
+            position: relative;
+            width: 183px;
+            height: 183px;
+            min-width: 183px;
+            min-height: 183px;
+            padding-left: 16px;
+
+            .item-adder {
+              top: 8px;
+              left: 10px;
+              position: absolute;
+            }
+            img:not(.unavailable) {
+              top: 0;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

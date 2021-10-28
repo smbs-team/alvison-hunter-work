@@ -1,0 +1,26 @@
+@import 'SassStylesConfig/variables';
+
+.checkout-view {
+  .order-summary {
+    @media (min-width: 960px) {
+      margin-right: 120px;
+    }
+    .bottom {
+     border-bottom: 0.5px solid $grey-input-bg; 
+    }
+    .section-title {
+      width: 100%;
+      @media (min-width: 960px) {
+        width: 180px;
+      }
+    }
+  }
+  .order-card {
+    border: 1px solid $grey-line;
+    height: 100%;
+    @media (min-width: 960px) {
+      width: 350px;
+    }
+  }
+}
+

@@ -1,0 +1,18 @@
+@import "../../../styles/SassStylesConfig/variables";
+
+.item-border {
+  border: 1px solid $greyed-out-text;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width: $sm) {
+  .description {
+    -webkit-line-clamp: 3;
+  }
+}

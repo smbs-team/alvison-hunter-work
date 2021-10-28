@@ -1,0 +1,266 @@
+@import '../../styles/SassStylesConfig/variables';
+
+.brand-view {
+  .brand-image,
+  .closed-cover {
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+  }
+  .closed-cover {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.58);
+    .closed-until {
+      color: white;
+      font-size: 24px;
+    }
+  }
+  .brand-title {
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  margin-bottom: 100px;
+  .chicklet {
+    left: 36px;
+    top: 346px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff !important;
+    background-color: $grey-body;
+    margin: 26px 0;
+    padding: 8px 12px;
+  }
+  .group-name {
+    font-family: $font-grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    color: #000000;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: 620px) {
+
+    .group-name {
+      margin-bottom: 24px;
+    }
+
+    .brand-top {
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+    }
+    .brand-image {
+      width: 65vw;
+      height: 26.95vw;
+    }
+    .top-right {
+      width: 30vw;
+      padding-left: 73px;
+      .top-text {
+        margin-top: 10px;
+      }
+    }
+  }
+  .loading-skeleton {
+    .branding {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      .brand-img {
+        background-color: #e2e2e2;
+        width: 100vw;
+        height: 41.46vw;
+        align-self: center;
+        @media (min-width: 1000px) {
+          width: 65vw;
+          height: 26.95vw;
+        }
+        @media (min-width: 620px) {
+          width: 65vw;
+          height: 26.95vw;
+        }
+      }
+      .brand-info {
+        width: 100%;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .brand-name {
+          width: 150px;
+          height: 25px;
+          margin: 0 0 15px 5px;
+          background-color: #aeaeae;
+          @media (min-width: 960px) {
+            width: 250px;
+            height: 57px;
+          }
+        }
+        @media (min-width: 960px) {
+          width: 250px;
+          margin-left: 73px;
+          .store-hrs-mobile {
+            display: none;
+          }
+        }
+        .store-hrs-mobile {
+          width: 57px;
+          height: 20px;
+          margin-right: 5px;
+          background-color: #d6d7da;
+        }
+      }
+      @media (min-width: 960px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .width {
+        width: 90vw;
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+        ::-webkit-scrollbar {
+          width: 0; /* Remove scrollbar space */
+          height: 0;
+          background: transparent; /* Optional: just make scrollbar invisible */
+        }
+      }
+      .categories {
+        justify-content: flex-start;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        overflow: scroll;
+        margin-top: 24px;
+        margin-bottom: 56px;
+        .cat-container {
+          box-sizing: border-box;
+          display: flex;
+          padding-bottom: 2px;
+          border-bottom: 1px solid #d6d7da;
+          .category {
+            background-color: #e2e2e2;
+            height: 20px;
+            width: 90px;
+            margin-right: 24px;
+          }
+        }
+      }
+      .item-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item {
+          margin: 50px 5px 0 5px;
+          display: flex;
+          @media (min-width: 620px) {
+            margin: 3px 40px 40px 5px;
+          }
+          @media (min-width: 1000px) {
+            min-width: 45%;
+          }
+          .item-img {
+            background-color: #ebebeb;
+            width: 39vw;
+            height: 39vw;
+            border-radius: 14px;
+            @media (min-width: 620px) {
+              width: 183px;
+              height: 183px;
+            }
+          }
+          .item-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 15px;
+            .item-name {
+              background-color: #a5a5a5;
+              height: 20px;
+              width: 100px;
+              margin: 5px 0 5px 0;
+            }
+            .item-desc {
+              background-color: #e2e2e2;
+              height: 40px;
+              width: 100px;
+              @media (min-width: 1000px) {
+                width: 200px;
+              }
+            }
+            .item-price {
+              background-color: #e2e2e2;
+              height: 20px;
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+    .store-hrs-desktop {
+      display: none;
+      @media (min-width: 960px) {
+        display: block;
+        width: 57px;
+        height: 20px;
+        background-color: #d6d7da;
+        margin: 5px 0 0 5px;
+      }
+    }
+    .location-mobile {
+      display: block;
+      width: 100px;
+      height: 15px;
+      background-color: #d6d7da;
+      margin: 0px 0 5px 5px;
+      @media (min-width: 960px) {
+        display: none;
+      }
+    }
+  }
+
+
+  .hero-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-size: cover !important;
+    background-position-y: center !important;
+
+
+    .hero-container__wrapper {
+      width: 90vw;
+      height: 100%;
+      position: relative;
+      margin: auto;
+
+      @media (min-width: 960px) {
+        width: 92vw;
+      }
+    }
+
+    .hero-container__description {
+      color: white;
+      position: absolute;
+      bottom: 40px;
+      font-family: $font-grotesque;
+      font-weight: bold;
+    }
+
+  }
+
+
+}

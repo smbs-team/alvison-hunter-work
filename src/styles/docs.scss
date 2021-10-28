@@ -1,0 +1,45 @@
+@import 'SassStylesConfig/variables';
+
+.docs {
+  margin: 0 120px 0 120px;
+  .docs-title {
+    text-align: left;
+    font-family: $font-prox;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    margin-bottom: 15px;
+    padding-top: 90px;
+  }
+  .docs-updated{
+    text-align: left;
+    font-family: $font-prox;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.75px;
+    padding-bottom: 24px;
+  }
+  .docs-text{
+    text-align: left;
+    font-family: $font-prox;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.75px;
+  }
+  .scroll-up {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .docs{
+    margin: 0 24px 0 24px;
+  }
+}

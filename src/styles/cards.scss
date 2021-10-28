@@ -1,0 +1,28 @@
+@import 'SassStylesConfig/variables';
+
+.card-list {
+  padding-top: 24px;
+  .card-list-item {
+    border-bottom: 0.5px solid $grey-line;
+    padding: 24px;
+    svg {
+      path {
+        fill: #4e4b66;
+      }
+    }
+  }
+  .card-center {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  height: 90vh;
+  .card-msg{
+    color: #AEAEB2;
+  } 
+  }
+}
+.add-btn {
+  margin-top: 14px;
+}
+

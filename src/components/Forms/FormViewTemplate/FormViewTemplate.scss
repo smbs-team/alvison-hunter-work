@@ -1,0 +1,17 @@
+@import '../../../styles/SassStylesConfig/variables';
+
+.formWidth {
+    width: 327px;
+}
+
+@media (min-width: $sm) {
+    .formWidth {
+        width: 548px;
+    }
+}
+
+@media (min-width: $md) {
+    .formWidth {
+        width: 588px;
+    }
+}

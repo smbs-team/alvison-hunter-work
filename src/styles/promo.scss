@@ -1,0 +1,18 @@
+@import 'SassStylesConfig/variables';
+
+.promo {
+  .msg {
+    margin: 10px 0 10px 8px;
+    @media (min-width: 620px) {
+      width: 513px;
+    }
+    width: 325px;
+    min-height: 20px;
+    .valid {
+      color: $success;
+    }
+    .invalid {
+      color: $error;
+    }
+  }
+}

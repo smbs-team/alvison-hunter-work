@@ -1,0 +1,18 @@
+@import 'SassStylesConfig/variables';
+
+.sign-in-form {
+  .bottom-link {
+    a,
+    a:visited,
+    .anchor {
+      margin-left: 5px;
+      color: $primary-light;
+      text-decoration: none;
+    }
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+    color: #2EB5E5;
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../styles/SassStylesConfig/variables';
+.hours-holder {
+
+  @media (min-width: 620px) {
+    margin-left: 4px;
+  }
+
+  .brand-name {
+    font-family: $font-prox;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    color: #000000;
+  }
+  .show-hours {
+    line-height: 20px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+  .hours-shown {
+    line-height: 20px;
+    .hours-top {
+      margin-bottom: 8px;
+      margin-top: -1px;
+    }
+    svg {
+      vertical-align: text-bottom;
+      margin-right: 10px;
+    }
+    .drawer {
+      box-shadow: 0px 10px 20px -4px rgba(3, 14, 27, 0.1);
+      position: absolute;
+      box-sizing: border-box;
+      z-index: 2000;
+      background-color: white;
+      width: 55vw;
+      padding: 20px 16px;
+      border-radius: 0 0 8px 8px;
+      .day {
+        display: inline-block;
+        width: 50px;
+      }
+    }
+  }
+  @media (min-width: 620px) {
+
+    .show-hours {
+      cursor: pointer;
+    }
+    .hours-shown {
+      box-sizing: content-box;
+      width: 320px;
+      .drawer {
+        width: 320px;
+      }
+    }
+  }
+}

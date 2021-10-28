@@ -1,0 +1,32 @@
+@import 'SassStylesConfig/variables';
+
+.orders-view {
+  .order-list {
+    padding-top: 20px;
+    .order-list-item {
+      height: 106px;
+      text-decoration: none;
+      border-bottom: 0.5px solid $grey-line;
+      padding: 20px 14px;
+      .list-line {
+        margin-bottom: 6px;
+      }
+      .brands {
+        max-width: 75%;
+      }
+      .date {
+        color: $grey-label;
+      }
+    }
+  }
+  .orders-center {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 90vh;
+    .orders-msg{
+      color: #AEAEB2;
+    }
+  }
+}

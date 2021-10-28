@@ -1,0 +1,75 @@
+@import 'SassStylesConfig/variables';
+
+.profile-view {
+  min-height: 100vh;
+  background-color: $primary;
+  .profile-top {
+    box-sizing: border-box;
+    padding: 28px 20px 25px 23px;
+    text-align: center;
+    :first-child,
+    :last-child {
+      width: 24px;
+    }
+    .close-icon {
+      margin-top: 7px;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      path {
+        fill: $grey-off-white;
+      }
+    }
+    .profile-title {
+      font-family: $font-prox;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 1px;
+      color: $grey-off-white;
+    }
+  }
+  .profile-list {
+    padding-top: 40px;
+    .profile-item,
+    .logout {
+      text-align: left;
+      color: $grey-off-white;
+      margin: 70px 0 20px 25px;
+      cursor: pointer;
+    }
+    .profile-item {
+      a {
+        text-decoration: none !important;
+        color: $grey-off-white;
+      }
+      margin: 24px 0 24px 23px !important;
+      font-family: $font-poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 27px;
+      letter-spacing: 0em;
+      svg {
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        path {
+          fill: $grey-off-white;
+        }
+      }
+    }
+    .logout {
+      font-family: $font-prox;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.75px;
+      text-align: left;
+      cursor: pointer;
+    }
+  }
+}

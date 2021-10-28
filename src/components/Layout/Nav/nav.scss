@@ -1,0 +1,157 @@
+@import '../../../styles/SassStylesConfig/variables';
+
+.nav {
+  border-bottom: 0.5px solid $grey-input-bg;
+  width: 100vw;
+  //position: absolute;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  .inner-nav {
+    width: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-links {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 620px) {
+    .top-links {
+      justify-content: flex-start;
+    }
+    .inner-nav {
+      width: 90vw;
+    }
+  }
+
+  .section {
+    width: 33%;
+  }
+
+  .inner-nav {
+    justify-content: space-between;
+    &.is-home {
+      .section {
+        width: 50%;
+      }
+      .logo {
+        justify-content: flex-start;
+        padding-left: 10px;
+      }
+      .top-links {
+        justify-content: flex-end;
+        :first-child {
+          margin-right: 5px;
+          padding: 4px 8px;
+        }
+        :last-child {
+          border: 1px solid black;
+          border-radius: 5px;
+          padding: 3px 8px;
+        }
+      }
+      .profile-holder {
+        display: flex;
+        justify-content: flex-end;
+        .profile-icon {
+          margin-bottom: 18px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+
+    & img {
+      height: 26px;
+    }
+
+    .market {
+      font-family: $font-prox;
+      font-weight: 400;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 7px;
+      line-height: 19px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.25px;
+      color: #000000;
+      display: inline-block;
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      position: relative;
+      top: 9px;
+      left: -5px;
+    }
+  }
+
+  &.no-border {
+    border-bottom: none;
+  }
+
+  .nav-link {
+    font-family: $font-prox;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 5px;
+  }
+
+  .profile-icon {
+    margin-bottom: 12px;
+    width: 20px;
+    height: 20px;
+    margin-left: 14px;
+  }
+
+  .nav-right {
+    text-align: right;
+    margin-right: 15px;
+    .cart-icon {
+      position: relative;
+      .item-count {
+        position: absolute;
+        background-color: $primary-medium;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 50%;
+        top: -15px;
+        right: -14px;
+        cursor: pointer;
+      }
+      > svg {
+        cursor: pointer;
+      }
+    }
+  }
+  .logo {
+    img {
+      max-width: 43vw;
+    }
+  }
+  .logo-white {
+    path {
+      fill: white;
+    }
+  }
+}

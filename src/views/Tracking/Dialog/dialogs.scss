@@ -1,0 +1,30 @@
+@import "../../../../src/styles/SassStylesConfig/variables";
+
+.background {
+  background-color: white;
+}
+
+a {
+  color: $primary-medium;
+  text-decoration: underline;
+}
+
+.paddingRight {
+  padding-right: 6px;
+}
+
+.strike {
+  text-decoration:line-through;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+}
+
+.anchor {
+  color: #3248C4;
+  text-decoration: underline;
+  cursor: pointer;
+}

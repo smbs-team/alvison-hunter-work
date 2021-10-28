@@ -1,0 +1,8 @@
+@import '../../../styles/SassStylesConfig/variables';
+
+.delivery-scheduler {
+  width: 95%;
+  @media (min-width: $sm) {
+    width: 30rem;
+  }
+}

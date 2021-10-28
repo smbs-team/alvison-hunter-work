@@ -1,0 +1,59 @@
+@import "../../styles/SassStylesConfig/variables";
+
+.content {
+  width: 100vw;
+}
+
+@media screen and (min-width: $sm) {
+  .content {
+    width: 500px;
+  }
+}
+
+.exp-img,
+.no-exp-img {
+  height: 260px;
+  width: 100%;
+}
+.exp-img {
+  object-fit: contain;
+  border-radius: 10px;
+}
+.no-exp-img {
+  border-radius: 14px;
+  background-color: #f5f5f9;
+  img {
+    height: 48px;
+    width: 60px;
+  }
+  .no-image-txt {
+    margin-top: 12px;
+    font-family: $font-poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    text-align: center;
+  }
+}
+.stepper-holder {
+  width: 98px;
+  height: 22px;
+  border: 1px solid #d6d7da;
+}
+.stepper {
+  cursor: pointer;
+}
+@media (min-width: 620px) {
+  .exp-btn {
+    width: 100%;
+  }
+}
+
+.default-close {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  cursor: pointer;
+}

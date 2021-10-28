@@ -1,0 +1,38 @@
+@import 'SassStylesConfig/variables';
+
+.cards-comp {
+  .numbers {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    input {
+      vertical-align: middle;
+    }
+    margin: 4px 0;
+
+    .choose-card {
+      width: 10%;
+    }
+    .card-type {
+      width: 20%;
+    }
+    .last-4 {
+      width: 40%;
+    }
+    .card-exp {
+      width: 20%;
+    }
+    .arrow-holder {
+      width: 10%;
+    }
+    .arrow-down {
+      width: 15px;
+      margin-left: 14px;
+      height: 15px;
+      vertical-align: middle;
+    }
+  }
+  .add-btn {
+    margin-top: 14px;
+  }
+}

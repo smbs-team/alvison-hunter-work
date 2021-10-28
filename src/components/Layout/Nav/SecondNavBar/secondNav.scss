@@ -1,0 +1,79 @@
+@import '../../../../styles/SassStylesConfig/variables';
+.outer {
+  border-top: 0.5px solid $grey-input-bg;
+  z-index: 1000;
+  .three-tabs{
+    width: 300px;
+    @media (min-width: 620px) {
+      width: 420px;
+    }
+  }
+  .two-tabs{
+    width: 300px;
+    @media (min-width: 620px) {
+      width: 290px;
+    }
+  }
+  .brands-section {
+    .brand-types {
+      border: 1px solid $grey-border;
+      .two-tabs {
+        width: 140px;
+      }
+      .restaurants {
+        @media (min-width: 620px) {
+          width: 140px;
+        }
+      }
+      .wework {
+        width: 70px;
+        @media (min-width: 620px) {
+          width: 140px;
+        }
+      }
+      .brand-types-item {
+        svg path{
+          fill: currentColor;
+        }
+        &.selected {
+          color: white;
+          background-color: $blue-munsell;
+        }
+      }
+    }
+  }
+  .loading {
+    width: 135px;
+    padding-top: 24px;
+  }
+  .delivery {
+    padding-left: 100px;
+    @media (min-width: 1280px) {
+      padding:0px;
+    }
+  }
+  .pickup {
+    padding-left: 40px;
+    @media (min-width: 1280px) {
+      padding:0px;
+    }
+  }
+}
+.mobile-view {
+  .two-tabs {
+    width: 290px;
+    @media (min-width: 620px) {
+      width: 290px;
+    }
+  }
+  .three-tabs {
+    width: 280px;
+    @media (min-width: 620px) {
+      width: 420px;
+    }
+  }
+}
+
+
+
+

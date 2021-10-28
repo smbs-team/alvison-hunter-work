@@ -1,0 +1,45 @@
+@import 'SassStylesConfig/variables';
+
+.profile-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 119px;
+  padding-left: 23px;
+  svg {
+    path {
+      fill: $grey-off-white;
+    }
+    vertical-align: middle;
+  }
+  background-color: $primary;
+  font-family: $font-prox;
+  color: $grey-off-white;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-align: left;
+  .top-text,
+  .add-new {
+    line-height: 49px;
+    padding-bottom: 12px;
+  }
+  .add-new {
+    text-decoration: none;
+    font-family: $font-prox;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    padding-right: 23px;
+    color: $grey-off-white;
+    svg {
+      width: 22px;
+      height: 22px;
+      margin-right: 5px;
+      margin-bottom: 3px;
+    }
+  }
+}

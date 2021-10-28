@@ -1,0 +1,41 @@
+@import 'SassStylesConfig/variables';
+
+.order-group-view {
+  .brand-section,
+  .order-group-section,
+  .tracking-link {
+    padding: 20px 14px;
+  }
+  .brand-section,
+  .order-group-section {
+    min-height: 106px;
+    border-bottom: 0.5px solid $grey-line;
+  }
+  .tracking-link a {
+    text-decoration: none;
+    color: $primary;
+  }
+  .order-group-section {
+    box-sizing: border-box;
+    .item-name {
+      font-family: $font-prox;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 22px;
+      letter-spacing: 0.75px;
+      margin-bottom: 5px;
+    }
+  }
+  .item-name,
+  .brand-name {
+    margin-bottom: 6px;
+  }
+  .totals {
+    margin-bottom: 60px;
+  }
+  .issues {
+    margin-top: 30px;
+    color: $primary;
+  }
+}

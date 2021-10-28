@@ -1,0 +1,46 @@
+@import 'SassStylesConfig/variables';
+
+.map-holder {
+  z-index: 1;
+  width: 100%;
+  height: 280px;
+
+  @media (min-width: $md) {
+     height: 520px;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 270px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  @media (min-width: $sm) {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (min-width: $md) {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* The styles below hide the google logos work as of 3/11/2021, but will
+likely need to be changed in the future as google maps gets updated */
+a[href^="http://maps.google.com/maps"]
+{
+  display: none !important;
+}
+a[href^="https://maps.google.com/maps"]
+{
+  display: none !important;
+}
+
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+  display: none;
+}
+.gmnoprint div {
+  background: none !important;
+}

@@ -1,0 +1,84 @@
+@import '../../../styles/SassStylesConfig/variables';
+
+.add-to-cart-smart {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+
+  @media (min-width: $sm) {
+      right: 5px;
+      left: auto;
+  }
+
+  &.isExpanded {
+    @media (min-width: $sm) {
+      right: 95px;
+      left: auto;
+    }
+  }
+
+
+  .item-count {
+    box-sizing: border-box;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: -4px;
+    user-select: none;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    color: #030e1b;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 20px 0px #00000021;
+  }
+
+  .item-count:hover {
+    background-color: rgb(246, 247, 248);
+  }
+
+  //the 'expanded' layout (+) x (-) of the button
+  .expanded {
+    display: flex;
+    background-color: rgb(33, 37, 41);
+    width: 132px;
+    height: 48px;
+    text-align: center;
+    border-radius: 38px;
+    align-items: center;
+
+
+    .remove-icon {
+      color: white;
+      width: 43px;
+      height: 30px;
+    }
+
+    .item-count-expanded {
+      flex-grow: 1;
+      color: white;
+      margin: 0;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      position: relative;
+      top: -2px;
+    }
+
+  }
+
+
+}
+

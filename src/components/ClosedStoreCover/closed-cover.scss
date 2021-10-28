@@ -1,0 +1,37 @@
+@import '../../styles/SassStylesConfig/variables';
+
+.closed-cover {
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.70);
+
+  &.isHome {
+
+    .closed-until {
+      font-size: 28px;
+
+      @media (min-width: 374px) {
+        font-size: 34px;
+      }
+
+    }
+
+  }
+
+  .closed-until {
+    color: white;
+    position: relative;
+    font-family: $font-grotesque;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+}

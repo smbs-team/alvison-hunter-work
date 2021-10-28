@@ -1,0 +1,45 @@
+@import 'src/styles/SassStylesConfig/variables';
+
+.grocery-hero {
+
+  .hero-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-size: contain !important;
+    background-position-y: bottom !important;
+    background-image: url("../../../assets/images/grocery/GroceryCover.png");
+    background-color: #0A5E60;
+    background-repeat: no-repeat;
+
+    @media (min-width: 960px) {
+      background-size: cover !important;
+      background-position-y: center !important;
+    }
+
+
+
+    .hero-container__wrapper {
+      width: 90vw;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (min-width: 960px) {
+        width: 92vw;
+      }
+    }
+
+    .hero-container__description {
+      color: white;
+      bottom: 40px;
+      font-family: $font-grotesque;
+      font-weight: bold;
+    }
+
+  }
+
+}
+

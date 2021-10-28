@@ -1,0 +1,890 @@
+@import "../../styles/SassStylesConfig/variables";
+
+.home {
+	position: relative;
+	z-index: 50;
+	.font-aqua {
+		color: #98f9d7;
+	}
+	.font-yellow {
+		color: #d2fd3d;
+	}
+	.font-white {
+		color: #ffffff;
+	}
+	.brownc-bg {
+		background-color: #9B856F;
+	}
+	.lilac-bg,
+	.lilac-bg-center {
+		background-color: #c2a8d5;
+	}
+	.lilac-bg-center {
+		flex-direction: row-reverse;
+		z-index: 0;
+		padding-top: 130px;
+		@media (max-width: 962px) {
+			width: 88vw;
+			border-radius: 20px;
+		}
+		@media (min-width: 962px) {
+			padding-top: 0;
+			padding-left: 103px;
+		}
+	}
+	.w-100 {
+		width: 100%;
+	}
+	.align-left {
+		text-align: left !important;
+	}
+	.no-mt {
+		margin-top: 0 !important;
+	}
+	.pb-30 {
+		@media (max-width: 619px) {
+			padding-bottom: 30px;
+		}
+	}
+	.grow-brand {
+		color: white;
+	}
+	.grow-brand-mobile {
+		padding: 0 18px !important;
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.candy,
+	.bowl {
+		position: absolute;
+		bottom: 7%;
+	}
+	.candy {
+		right: -20%;
+	}
+	.bowl {
+		right: -30%;
+	}
+	@media (min-width: 962px) {
+		.bowl {
+			right: -20%;
+		}
+		.candy {
+			right: 0;
+		}
+	}
+	@media (min-width: 1100px) {
+		.bowl {
+			right: 10%;
+		}
+	}
+	.salad-bg {
+		background-size: cover;
+		background-image: url("https://ik.imagekit.io/getreef/reefmarketplacedsp/site-images/chef-mobile-2.jpg");
+		height: 600px;
+		@media (min-width: 962px) {
+			background-image: url("https://ik.imagekit.io/getreef/reefmarketplacedsp/site-images/chef-desktop-2.jpg");
+			height: 465px;
+		}
+		width: 100vw;
+		position: absolute;
+		left: 0;
+	}
+	.top-bar-search {
+		@media (min-width: 962px) {
+			width: 592px;
+			margin-top: 24px;
+		}
+		.search-address-textfield {
+			fieldset {
+				border: none;
+			}
+		}
+
+	}
+	.narrow {
+		@media (min-width: 1100px) {
+			width: 1100px !important;
+			border-radius: 16px;
+		}
+	}
+	@media (min-width: 962px) and (max-width: 1099px) {
+		.delivery-message {
+			width: 100vw !important;
+			border-radius: 16px;
+			.bowl {
+				right: 0;
+			}
+		}
+	}
+	.title-type {
+		max-width: 100%;
+		font-family: $font-grotesque;
+		font-size: 24px;
+		font-style: bold;
+		font-weight: 900;
+		line-height: 28px;
+		letter-spacing: 0em;
+		text-align: center;
+		margin: 10px 10px;
+		@media (min-width: 962px) {
+			font-family: $font-grotesque;
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 42px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+	}
+	.body-type {
+		font-family: $font-grotesque;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: -0.15px;
+		text-align: center;
+		margin: 10px 10px;
+		@media (min-width: 962px) {
+			text-align: left;
+		}
+	}
+	.home-link {
+		margin-top: 30px;
+		margin-left: 10px;
+		cursor: pointer;
+		font-family: $font-grotesque;
+		color: #ffffff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: -0.15px;
+		text-align: left;
+		svg {
+			margin-left: 12px;
+			vertical-align: middle;
+			path {
+				fill: white;
+			}
+		}
+		&.black {
+			color: black;
+			svg {
+				path {
+					fill: black;
+				}
+			}
+		}
+	}
+	.hero-center {
+		display: flex;
+		justify-content: center;
+		.hero {
+			background-image: url("../../assets/images/hero-mobile.png");
+			position: absolute;
+			top: 80px;
+			background-size: cover;
+			z-index: 1000;
+			width: 340px;
+			height: 290px;
+			@media (min-width: 350px) {
+				width: 380px;
+				height: 290px;
+			}
+			@media (min-width: 830px) {
+				width: 450px;
+				height: 360px;
+			}
+			@media (min-width: 960px) {
+				width: 800px;
+				height: 650px;
+				bottom: 0;
+				right: -190px;
+				top: 64px;
+				left: auto;
+				background-image: url("../../assets/images/hero.png");
+			}
+		}
+	}
+	.delivery-desktop,
+	.convenient-desktop {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 465px;
+	}
+	.flash-banner {
+		width: 100vw;
+		background-color: #f4f4f4;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: 962px) {
+			flex-direction: row;
+		}
+		.flash-text {
+			width: 100vw;
+			@media (min-width: 962px) {
+				margin-top: 115px;
+				margin-left: 115px;
+				width: 384px;
+			}
+		}
+		.burritos-desktop {
+			display: none;
+			@media (min-width: 962px) {
+				width: 50vw;
+				height: 440px;
+				display: flex;
+			}
+		}
+		.burritos-mobile {
+			width: 100vw;
+			z-index: 1002;
+			display: flex;
+			justify-content: center;
+			@media (min-width: 962px) {
+				display: none;
+			}
+		}
+	}
+	.icecream-banner {
+		width: 100vw;
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 15px 0 15px 0;
+		background-color: #ddb5c8;
+		z-index: 0;
+		@media (min-width: 962px) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.icecream-text {
+			width: 100vw;
+			@media (min-width: 962px) {
+				margin-top: 78px;
+				margin-left: 130px;
+				width: 800px;
+			}
+		}
+		.icecream-desktop {
+			display: none;
+			@media (min-width: 962px) {
+				width: 50vw;
+				height: 440px;
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+		.icecream-mobile {
+			width: 100vw;
+			display: flex;
+			justify-content: flex-end;
+			@media (min-width: 962px) {
+				display: none;
+			}
+		}
+	}
+	.ice-cream {
+		position: absolute;
+		right: 0;
+		top: -80px;
+		z-index: -1;
+		height: 231px;
+		@media (min-width: 962px) {
+			height: 452px;
+			bottom: 60px;
+		}
+	}
+	.top-image {
+		position: relative;
+		z-index: 100;
+		display: inline-block;
+		height: 700px;
+		width: 100vw;
+		object-fit: cover;
+	}
+	.top-content {
+		position: absolute;
+		z-index: 1000;
+		top: 100px;
+    @media (min-width: 375px) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    @media (min-width: 962px) {
+        width: 100%;
+        justify-content: left;
+    }
+	}
+	@media (min-width: 962px) {
+		.top-content {
+			position: absolute;
+			z-index: 1000;
+			top: 180px;
+		}
+	}
+
+	.inner-top {
+		width: auto;
+		padding:10px;
+		@media (min-width: 375px) {
+			width: 592px;
+			margin-top:40px;
+			margin-left:0px;
+			margin: 0 auto;
+			display:block;
+		}
+		@media (min-width: 960px) {
+			width: 592px;
+			margin: 0 auto;
+			margin-top:40px;
+			margin-left:15px;
+			display:block;
+		}
+		@media (min-width: 962px) {
+			width: 1141px;
+			margin:0px;
+			padding-left: 4rem;
+		}
+	}
+
+	.search-btn {
+		display: none;
+		align-items: center;
+		text-align: center;
+		padding: 6px;
+		position: static;
+		width: 135px;
+		height: 48px;
+		font-family: $font-sofia;
+		line-height: 22px;
+		letter-spacing: -0.1px;
+		color: #FFFFFF;
+		background: #030E1B;
+		@media (min-width: 960px) {
+			display:block !important;
+		}
+	}
+	.rounded-search-btn {
+		border-radius: 50%;
+		width: 32px;
+		height: 32px;
+		align-self: center;
+		border: 3px solid rgb(0, 0, 0);
+		padding: 4px;
+		margin-left: 8px;
+	}
+
+	.looking-for {
+		color: #ACF7D8;
+		font-family: $font-hanson;
+		font-size: 34px;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 34px;
+		letter-spacing: -0.005em;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		padding-top: 260px;
+		position: relative;
+		@media (min-width: 350px) {
+			padding-top: 280px;
+			font-size: 40px;
+			line-height: 40px;
+		}
+		@media (min-width: 830px) {
+			font-size: 50px;
+			line-height: 50px;
+			padding-top: 310px;
+			text-align: center;
+		}
+		@media (min-width: 960px) {
+			font-size: 70px;
+			line-height: 88px;
+			padding-top: 40px;
+			text-align: left;
+		}
+	}
+
+	.looking-for-sub {
+		color: white;
+		font-family: $font-sofia;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 32px;
+		position: relative;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		@media (min-width: 375px) {
+			font-size: 24px;
+			line-height: 24px;
+			letter-spacing: -0.25px;
+			text-align: center;
+		}
+		@media (min-width: 960px) {
+			font-size: 24px;
+			max-width:592px;
+			line-height: 24px;
+			letter-spacing: -0.25px;
+			text-align: left;
+			width: 592px;
+			height: 48px;
+		}
+	}
+	@media (min-width: 962px) {
+		.looking-for {
+			font-size: 70px;
+			line-height: 88px;
+			padding-top: 0px;
+			text-align: left;
+		}
+		.looking-for-sub {
+			font-size: 24px;
+			line-height: 24px;
+			letter-spacing: -0.25px;
+			text-align: left;
+		}
+	}
+	.convenient-quick-bites {
+		width: 100vw;
+		padding: 20px 0;
+		.convenient-title {
+			font-family: $font-prox;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 56px;
+			letter-spacing: 1px;
+		}
+	}
+	.convenient-quick-bites,
+	.delivery-message {
+		margin-top: 80px;
+	}
+	.delivery-message {
+		position: relative;
+		.delivery-title {
+			line-height: 56px;
+		}
+	}
+	.fresh-foods-holder {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.outer-btn-holder {
+		display: flex;
+		justify-content: center;
+		margin-top: 24px;
+	}
+	.salmon-holder,
+	.bag-holder {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.convenient-desktop,
+	.delivery-desktop {
+		display: none;
+	}
+	.convenient-mobile,
+	.delivery-mobile {
+		padding: 20px 18px;
+		text-align: left;
+	}
+	@media (min-width: 962px) {
+		.home-bottom,
+		.convenient-quick-bites,
+		.fresh-foods-holder {
+			width: 100vw;
+		}
+		.home-bottom {
+			margin-bottom: 40px;
+		}
+		.salmon-salad {
+			width: 494px;
+			height: 465px;
+		}
+		.bag {
+			height: 545px;
+			width: 604px;
+		}
+		.convenient-quick-bites,
+		.delivery-message {
+			display: flex;
+			>div {
+				width: 50%;
+			}
+			>div:last-child {
+				width: 50%;
+			}
+		}
+		.convenient-quick-bites {
+			flex-direction: row-reverse;
+			>div {
+				width: 50%;
+			}
+			>div:last-child {
+				width: 50%;
+			}
+		}
+		.delivery-message .delivery-title,
+		.delivery-message .delivery-body,
+		.convenient-quick-bites .convenient-title,
+		.convenient-quick-bites .convenient-body {
+			text-align: left;
+		}
+		.convenient-desktop .convenient-title,
+		.delivery-desktop .delivery-title {
+			font-family: $font-prox;
+			font-size: 64px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 62px;
+			letter-spacing: 0em;
+			margin-bottom: 20px;
+		}
+		.convenient-desktop .convenient-body,
+		.delivery-desktop .delivery-body {
+			font-family: $font-prox;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: 0.75px;
+		}
+		.convenient-mobile,
+		.delivery-mobile {
+			display: none;
+		}
+		.convenient-desktop,
+		.delivery-desktop {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.salmon-holder {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.bag-holder {
+			display: flex;
+			justify-content: flex-start;
+		}
+		.home-bottom {
+			box-sizing: border-box;
+			padding-left: 100px;
+		}
+		.hurry,
+		.before {
+			font-family: $font-prox;
+			font-size: 64px !important;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 56px;
+			letter-spacing: 1px;
+			text-align: center;
+			display: inline-block;
+		}
+		.outer-btn-holder {
+			display: block;
+		}
+		.outer-bottom {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}
+
+
+/* -- Navbar Section Custom Rules --*/
+.nav .logo img{
+	max-width: 43vw;
+	height:36px;
+	width:92px;
+	@media (min-width: 830px) {
+		width:120px;
+		height: 50px;
+	}
+	@media (min-width: 960px) {
+		width:150px;
+		height: 34px;
+	}
+}
+
+.nav-bar-link-btn{
+	align-items: center;
+	color: #030E1B;
+	display: flex;
+	font-family: $font-sofia;
+	font-size: 14px;
+	letter-spacing: -0.5px;
+	line-height: 20px;
+	@media (min-width: 960px) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+.nav-bar-dark-btn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 16px;
+	background: #030E1B;
+	font-family: $font-sofia;
+	font-size: 14px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.5px;
+	color: #FFFFFF;
+	@media (min-width: 960px) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+/* -- Miami Favorites Section Custom Rules --*/
+
+.miami-favorites-title {
+    color: #030E1B;
+    font-family: $font-sofia;
+    font-size: 24px;
+    letter-spacing: -0.25px;
+    line-height: 32px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.miami-favorites-subtitle {
+    color: #5A606C;
+    font-family: $font-sofia;
+    font-size: 18px;
+    letter-spacing: -0.25px;
+    line-height: 24px;
+}
+
+/* -- Faster Better Food No Fees Section Custom Rules --*/
+
+.simple-value-proposition-title {
+    font-family: $font-sofia;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.simple-value-proposition-description {
+    color: #5A606C;
+    font-family: $font-sofia;
+    font-size: 18px;
+    letter-spacing: -0.25px;
+    line-height: 24px;
+    max-width: 350px;
+    text-align: center;
+}
+
+
+/* -- Faster Better Food No Fees Section Custom Rules --*/
+
+.work-with-reef-title {
+    color: #000000;
+    font-family: $font-sofia;
+    font-size: 24px;
+    letter-spacing: -0.25px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.work-with-reef-description {
+    color: #5A606C;
+    font-family: $font-sofia;
+    font-size: 18px;
+    max-width: 400px;
+    letter-spacing: -0.25px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.work-with-reef-apply-now-link {
+    color: #218F9C;
+    font-family: $font-sofia;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.work-with-reef-apply-now-link:hover {
+    color: #175860;
+}
+
+/* -- Jumbotron Section Custom Rules --*/
+
+.jumbotron-giant-text {
+    font-family: $font-hanson;
+    font-weight: 700;
+    font-size: 50px;
+	line-height: 50px;
+    letter-spacing: -0.5px;
+    max-width: 90%;
+    @media (min-width: 375px) {
+        font-weight: bold;
+        font-size: 60px;
+		line-height: 60px;
+        width: auto;
+    }
+    @media (min-width: 600px) {
+		font-size: 80px;
+        line-height: 80px;
+    }
+    @media (min-width: 660px) {
+        line-height: 80px;
+		font-size: 80px;
+		width: 508px;
+    }
+    @media (min-width: 960px) {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    @media (min-width: 1440px) {
+        font-style: normal;
+        font-size: 80px;
+		margin: 0 auto;
+        line-height: 80px;
+    }
+}
+
+.jumbotron-regular-text {
+    color: #000000;
+    font-family: $font-sofia;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 100% !important;
+}
+
+.jumbotron-giant-text-custom {
+    color: #9b7b6f;
+    display: flex;
+    font-family: $font-hanson;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    justify-content: center;
+    line-height: 70px;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+	width:80%;
+    @media (min-width: 375px) {
+        line-height: 50px;
+	}
+	@media (min-width: 600px){
+		font-size: 70px;
+	}
+	@media(min-width: 1280px){
+		width:380px;
+		font-size: 120px;
+		line-height: 120px;
+		display:inline-block;
+	}
+}
+
+.jumbotron-discounts-title {
+    color: #acf7d8;
+    font-family: $font-sofia;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    @media (min-width: 375px) {
+        font-size: 56px;
+        line-height: 56px;
+    }
+    @media (min-width: 830px) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.jumbotron-discounts-description {
+    color: #ffffff;
+    font-family: $font-sofia;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.15px;
+    @media (min-width: 375px) {
+        font-size: 20px;
+        line-height: 20px;
+	}
+}
+
+.bg-brown-color {
+    background: #9b856f;
+}
+
+.bg-green-color {
+    background: #acf7d8;
+}
+
+/* -- Jumbotron Section Custom Rules End --*/
+
+.logo img {
+    max-width: 25vw;
+    margin-left: -10px;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.mobile-only {
+    display: inline-block;
+}
+
+/* Extra small devices (phones, 480px and down) */
+
+@media (min-width: 962px) {
+    .desktop-only:not(.ice-cream),
+    .convenient-desktop,
+    .delivery-desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .desktop-only {
+        &.ice-cream {
+            display: block;
+        }
+    }
+    .mobile-only {
+        display: none;
+    }
+}
+
+body {
+    min-height: -webkit-fill-available;
+    min-height: 100%;
+    position: relative;
+    overscroll-behavior-x: none;
+}
+
+html {
+    min-height: -webkit-fill-available;
+    overscroll-behavior-x: none;
+}

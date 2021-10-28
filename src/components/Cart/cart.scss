@@ -1,0 +1,51 @@
+@import '../../styles/SassStylesConfig/variables';
+
+
+.cart-view {
+  padding-bottom: 100px;
+  width: 100%;
+  .close-icon,
+  .top-right-empty {
+    width: 24px;
+  }
+  .cart-body {
+    width: 90%;
+  }
+}
+.checkout-btn {
+  position: fixed;
+  z-index: 300;
+  bottom: 0;
+  margin-bottom: 12px;
+}
+.empty-cart {
+  .empty-cart-text {
+    margin-top: 0px;
+    width: 70%;
+    text-align: center;
+  }
+  .bubble {
+    margin-left: 100px;
+  }
+
+  .empty-icon {
+    width: 85%;
+  }
+  .menu-link {
+    margin-top: 28px;
+    color: $primary;
+  }
+  a:visited {
+    color: $primary !important;
+  }
+}
+@media (min-width: 620px) {
+  .checkout-btn {
+    width: 574px;
+  }
+  .empty-cart-text {
+    margin-top: 0;
+    width: 90%;
+    text-align: center;
+  }
+}

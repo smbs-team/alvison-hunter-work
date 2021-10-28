@@ -1,0 +1,90 @@
+@import 'SassStylesConfig/variables';
+.type {
+  font-family: $font-prox;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  &.bold {
+    font-weight: 800;
+  }
+  &.h {
+    &.xlg {
+      font-size: 80px;
+      line-height: 80px;
+    }
+    &.lg {
+      font-size: 64px;
+      line-height: 68px;
+    }
+    &.md {
+      font-size: 48px;
+      line-height: 57px;
+    }
+    &.sm {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  &.lg {
+    font-size: 48px;
+    line-height: 50px;
+    &.bold {
+      font-size: 48px;
+      line-height: 47px;
+    }
+  }
+  &.med {
+    font-size: 32px;
+    line-height: 36px;
+    &.bold {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+  &.sm {
+    font-size: 24px;
+    line-height: 25px;
+    &.bold {
+      font-size: 24px;
+      line-height: 25px;
+    }
+  }
+  &.s20,
+  &.s16,
+  &.s14,
+  &.s13 {
+    letter-spacing: 0.75px;
+    color: #4e4b66;
+  }
+  &.s20 {
+    font-size: 20px;
+    line-height: 23px;
+    &.bold {
+      line-height: 25px;
+    }
+  }
+  &.s16 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+    &.bold {
+      line-height: 17px;
+    }
+  }
+  &.s14 {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.75px;
+    &.bold {
+      line-height: 26px;
+    }
+  }
+  &.s13 {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.75px;
+    &.bold {
+      line-height: 26px;
+    }
+  }
+}

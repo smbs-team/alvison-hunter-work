@@ -1,0 +1,106 @@
+@use "sass:meta";
+@use "variables" as *;
+
+/*
+   ***** IMPORTANT *******
+  This variables NEED to match every SASS variable,
+  Each new variable created in the _variables.scss file need to be created here too.
+  ***** IMPORTANT *******
+*/
+
+//Colors
+:root {
+  --primary: #{meta.inspect($primary)};
+  --primary-medium: #{meta.inspect($primary-medium)};
+  --primary-light: #{meta.inspect($primary-light)};
+  --secondary: #{meta.inspect($secondary)};
+  --blue-munsell: #{meta.inspect($blue-munsell)};
+  --green-select: #{meta.inspect($green-select)};
+  --green-bg: #{meta.inspect($green-bg)};
+  --teal: #{meta.inspect($teal)};
+  --dark-green: #{meta.inspect($dark-green)};
+
+  --success: #{meta.inspect($success)};
+  --error: #{meta.inspect($error)};
+
+  --grey-body: #{meta.inspect($grey-body)};
+  --grey-label: #{meta.inspect($grey-label)};
+  --grey-placeholder: #{meta.inspect($grey-placeholder)};
+  --grey-line: #{meta.inspect($grey-line)};
+  --grey-bg-option: #{meta.inspect($grey-bg-option)};
+  --grey-input-bg: #{meta.inspect($grey-input-bg)};
+  --grey-bg: #{meta.inspect($grey-bg)};
+  --grey-off-white: #{meta.inspect($grey-off-white)};
+  --grey-title-active: #{meta.inspect($grey-title-active)};
+  --grey-desc: #{meta.inspect($grey-desc)};
+  --grey-border: #{meta.inspect($grey-border)};
+  --grey-border-dark: #{meta.inspect($grey-border-dark)};
+  --greyed-out: #{meta.inspect($greyed-out)};
+  --greyed-out-text: #{meta.inspect($greyed-out-text)};
+  --dark-grey-text: #{meta.inspect($dark-grey-text)};
+  --white-text: #{meta.inspect($white-text)};
+  --ghost-white: #{meta.inspect($ghost-white)};
+
+  --cta-1: #{meta.inspect($cta-1)};
+  --cta-2: #{meta.inspect($cta-2)};
+  --taupe: #{meta.inspect($taupe)};
+  --content-black: #{meta.inspect($content-black)};
+}
+
+// Typographies
+
+:root {
+  --font-grotesque: #{meta.inspect($font-grotesque)};
+  --font-hanson: #{meta.inspect($font-hanson)};
+  --font-lato: #{meta.inspect($font-lato)};
+  --font-poppins: #{meta.inspect($font-poppins)};
+  --font-prox: #{meta.inspect($font-prox)};
+  --font-sofia: #{meta.inspect($font-sofia)};
+}
+
+/* ------------  Grotesque ------------ */
+@font-face {
+  font-family: "Grotesque";
+  font-style: normal;
+  src: url("../../assets/fonts/Basis/BasisGrotesque-Medium-Pro.ttf");
+}
+
+@font-face {
+  font-family: "Grotesque";
+  src: url("../../assets/fonts/Basis/BasisGrotesque-Light-Pro.ttf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Grotesque";
+  src: url("../../assets/fonts/Basis/BasisGrotesque-Bold-Pro.ttf");
+  font-weight: bold;
+}
+
+/* ------------ Hanson ------------ */
+@font-face {
+  font-family: "Hanson";
+  src: url("../../assets/fonts/Hanson/Hanson-Bold-700.otf") format("opentype");
+}
+
+/* ------------  Sofia Pro ------------ */
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: normal;
+  src: url("../../assets/fonts/Sofia/Mostardesign\ -\ Sofia\ Pro\ Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: 500;
+  src: url("../../assets/fonts/Sofia/Mostardesign\ -\ Sofia\ Pro\ Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: bold;
+  src: url("../../assets/fonts/Sofia/Mostardesign\ -\ Sofia\ Pro\ Bold.otf")
+    format("opentype");
+}

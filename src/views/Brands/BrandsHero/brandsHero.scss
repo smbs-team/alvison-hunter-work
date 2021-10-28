@@ -1,0 +1,72 @@
+@import 'src/styles/SassStylesConfig/variables';
+
+.brands-hero {
+
+  .brands-container {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    background-size: contain !important;
+    background-position-y: bottom !important;
+    background-color: #9B856F;
+    background-repeat: no-repeat;
+
+    @media (min-width: $sm) {
+      height: 207px;
+    }
+
+    @media (min-width: $md) {
+      height: 360px;
+    }
+
+    .brands-giant-text {
+      font-family: $font-hanson;
+      color: $brands-hero-turquoise;
+      font-size: 48px;
+      line-height: 40px;
+      letter-spacing: -0.5px;
+      display: flex;
+      justify-content: center;
+
+      @media (min-width: $sm) {
+        font-size: 72px;
+        line-height: 45px;
+      }
+
+      @media (min-width: $md) {
+        font-size: 120px;
+        line-height: 50px;
+        letter-spacing: -0.15px;
+      }
+    }
+
+    .brands-container__wrapper {
+      width: 90vw;
+      padding-top: 44px;
+      position: relative;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (min-width: $sm) {
+        padding-top: 45px;
+      }
+
+      @media (min-width: $md) {
+        padding-top: 116px;
+      }
+
+    }
+
+    .brands-container__description {
+      color: white;
+      bottom: 40px;
+      font-family: $font-grotesque;
+      font-weight: bold;
+    }
+
+  }
+
+}
+

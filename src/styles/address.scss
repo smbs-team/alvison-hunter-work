@@ -1,0 +1,52 @@
+@import 'SassStylesConfig/variables';
+
+.address-view {
+  .address-list {
+    padding-top: 24px;
+    .address-list-item {
+      border-bottom: 0.5px solid $grey-line;
+      padding: 24px;
+      svg {
+        path {
+          fill: #4e4b66;
+        }
+      }
+    }
+  }
+  .addresses-center {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 90vh;
+    .addresses-msg {
+      color: #AEAEB2;
+    }
+  }
+}
+
+.checkout-address-list {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  input {
+    vertical-align: middle;
+  }
+  .choose-address {
+    width: 10%;
+  }
+  margin: 4px 0;
+  margin-left: 36px;
+  .line-1 {
+    width: 80%;
+  }
+  .arrow-holder {
+    width: 10%;
+  }
+  .arrow-down {
+    width: 15px;
+    margin-left: 14px;
+    height: 15px;
+    vertical-align: middle;
+  }
+}

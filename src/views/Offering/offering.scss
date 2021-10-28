@@ -1,0 +1,14 @@
+@import "../../styles/SassStylesConfig/variables";
+
+.see-all-bttn {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-decoration: underline;
+}
+
+.new-restaurant {
+  background-image: linear-gradient(to right, black, transparent),
+    url("../../assets/images/cripy_rice.png");
+  background-size: cover;
+}

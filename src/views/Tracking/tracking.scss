@@ -1,0 +1,122 @@
+@import "../../../src/styles/SassStylesConfig/variables";
+
+.trackingContainer{
+  grid-column-gap: 100px;
+  padding: 40px 15px;
+  background-color: $grey-bg;
+
+  @media (min-width: $sm) {
+    width: 572px;
+    background-color: transparent;
+    margin: 40px auto;
+    padding: 0;
+  }
+  
+  @media (min-width: $md) {
+    width: 1100px;
+    margin: 68px auto;
+  }
+}
+
+.tracking-section {
+  margin: 0 auto;
+
+  .circleBox {
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20.5px;
+    .inner-round {
+      svg {
+        margin-top: 3px;
+      }
+    }
+
+    @media (min-width: $sm) {
+      width: 63px;
+      height: 63px;
+      border-radius: 35.5px;
+    }
+
+    @media (min-width: $md) {
+      width: 53px;
+      height: 53px;
+      border-radius: 35.5px;
+    }
+  }
+
+  .check-icon {
+    background-color: $success;
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  .other-icon {
+    border: 1px solid $primary;
+  }
+}
+
+.horizontal-dotted-line {
+  border-bottom: 2px dashed black;
+  width: 30px;
+  margin: auto 0;
+
+  @media (min-width: $sm) {
+    width: 56px;
+  }
+
+  @media (min-width: $md) {
+    width: 46px;
+  }
+}
+
+.orderHeader {
+  font-size: 32px;
+  font-family: $font-sofia;
+  margin-top: 32px;
+
+  @media (min-width: $sm) {
+    font-size: 34px;
+    margin-top: 48px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 60px;
+  }
+    
+    .description {
+      color: $dark-grey-text;
+    }
+}
+
+.iconMargin {
+  margin-right: 10px;
+}
+
+.address {
+  padding-bottom: 15px;
+}
+
+.grayTextColor {
+  color: $dark-grey-text
+}
+
+.gridRowTracking {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gridRowMap {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.background {
+  background-color: white;
+}
